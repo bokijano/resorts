@@ -2,6 +2,7 @@
   "name": "mountain-resorts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bokijano.github.io/resorts",
   "dependencies": {
     "@nomoreanalog/react-scripts-eslintless": "2.1.10",
     "gh-pages": "^2.1.1",
@@ -9,6 +10,7 @@
     "react-dom": "^16.9.0"
   },
   "scripts": {
+    "deploy": "gh-pages -d buid",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
