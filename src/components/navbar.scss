@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: whitesmoke;
+  z-index: 1;
+  .nav-center {
+    .nav-header {
+      display: flex;
+      justify-content: space-around;
+      .logo {
+        font-family: "Calistoga", cursive;
+        //font-family: 'Bebas Neue', cursive;
+        //font-family: 'Cabin', sans-serif;
+        //font-family: 'Lobster', cursive;
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 15px;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        a {
+          text-decoration: none;
+          .first {
+            color: #333;
+          }
+          .second {
+            color: grey;
+            margin-left: 5px;
+          }
+          &:hover {
+            text-shadow: 2px 2px 4px;
+            .first {
+              color: grey;
+            }
+            .second {
+              color: #333;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .nav-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        .nav-icon {
+          font-size: 1.5rem;
+          color: #333;
+        }
+      }
+    }
+    .nav-links {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s linear;
+      list-style-type: none;
+      .active {
+        color: #af9a7d !important;
+        font-size: 1.5rem;
+        &:hover {
+          color: #333 !important;
+        }
+      }
+      a {
+        font-family: "Cabin", sans-serif;
+        display: block;
+        text-decoration: none;
+        padding: 1rem 0;
+        margin-left: 10px;
+        color: #333;
+        transition: all 0.3s linear;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        &:hover {
+          color: #af9a7d;
+        }
+      }
+    }
+    .show-nav {
+      height: 100%;
+    }
+    @media screen and(min-width: 768px) {
+      margin: 0 auto;
+      display: flex;
+      .nav-header {
+        .nav-btn {
+          display: none;
+        }
+        .logo {
+          padding-bottom: -20px;
+        }
+      }
+      .nav-links {
+        height: auto;
+        display: flex;
+        margin-left: 4rem;
+        a {
+          margin: 0 1rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
