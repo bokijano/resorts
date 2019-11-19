@@ -12,8 +12,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar .nav-center .nav-header .logo {
@@ -56,6 +57,25 @@
   border: none;
   cursor: pointer;
   outline: none;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 400px) {
+  .navbar .nav-center .nav-header .nav-btn {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .navbar .nav-center .nav-header .nav-btn {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navbar .nav-center .nav-header .nav-btn {
+    margin-left: 300px;
+  }
 }
 
 .navbar .nav-center .nav-header .nav-btn .nav-icon {
@@ -109,6 +129,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .navbar .nav-center .nav-header .nav-btn {
     display: none;

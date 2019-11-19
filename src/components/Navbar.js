@@ -32,18 +32,24 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link className="active" to="/">
+              <Link className="active" to="/" onClick={this.handleToggle}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/rooms">Kopaonik</Link>
+              <Link to="/kopaonik" onClick={this.handleToggle}>
+                Kopaonik
+              </Link>
             </li>
             <li>
-              <Link to="/zlatibor">Zlatibor</Link>
+              <Link to="/zlatibor" onClick={this.handleToggle}>
+                Zlatibor
+              </Link>
             </li>
             <li>
-              <Link to="/oldMountain">Old Mountain</Link>
+              <Link to="/staraPlanina" onClick={this.handleToggle}>
+                Stara Planina
+              </Link>
             </li>
           </ul>
         </div>

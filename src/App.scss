@@ -1,5 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mountain-pos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  h1 {
+    text-align: center;
+    font-family: "Bebas Neue", cursive !important;
+  }
+  .temperature-content {
+    display: flex;
+    justify-content: space-between;
+    .temp-icon {
+      margin: 2px;
+      height: 45px;
+      width: 45px;
+      margin-top: 2px;
+      background: grey;
+    }
+    .temperature-degree {
+      margin: 3px;
+      color: red;
+      font-weight: bolder;
+    }
+    .degree-temp {
+      font-weight: bolder;
+      float: left;
+    }
+    button {
+      margin-left: 30px;
+    }
+  }
 }

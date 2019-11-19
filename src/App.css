@@ -1,4 +1,57 @@
-.app-try {
-  background: blue;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mountain-pos {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mountain-pos h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive !important;
+}
+
+.mountain-pos .temperature-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mountain-pos .temperature-content .temp-icon {
+  margin: 2px;
+  height: 45px;
+  width: 45px;
+  margin-top: 2px;
+  background: grey;
+}
+
+.mountain-pos .temperature-content .temperature-degree {
+  margin: 3px;
+  color: red;
+  font-weight: bolder;
+}
+
+.mountain-pos .temperature-content .degree-temp {
+  font-weight: bolder;
+  float: left;
+}
+
+.mountain-pos .temperature-content button {
+  margin-left: 30px;
 }
 /*# sourceMappingURL=App.css.map */

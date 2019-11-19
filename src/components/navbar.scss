@@ -9,7 +9,7 @@
   .nav-center {
     .nav-header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       .logo {
         font-family: "Calistoga", cursive;
         //font-family: 'Bebas Neue', cursive;
@@ -46,6 +46,16 @@
         border: none;
         cursor: pointer;
         outline: none;
+        margin-left: 50px;
+        @media screen and (min-width: 400px) {
+          margin-left: 100px;
+        }
+        @media screen and (min-width: 500px) {
+          margin-left: 200px;
+        }
+        @media screen and (min-width: 600px) {
+          margin-left: 300px;
+        }
         .nav-icon {
           font-size: 1.5rem;
           color: #333;
@@ -87,6 +97,7 @@
     @media screen and(min-width: 768px) {
       margin: 0 auto;
       display: flex;
+      justify-content: space-around;
       .nav-header {
         .nav-btn {
           display: none;
