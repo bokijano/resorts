@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6bd8aa48a9ac3da8f377",
+    "revision": "ee0339b95d0eba4913cc",
     "url": "/resorts/static/css/main.1ec8a11e.chunk.css"
   },
   {
-    "revision": "6bd8aa48a9ac3da8f377",
-    "url": "/resorts/static/js/main.6bd8aa48.chunk.js"
+    "revision": "ee0339b95d0eba4913cc",
+    "url": "/resorts/static/js/main.ee0339b9.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/staraPlanina.9c68700c.jpg"
   },
   {
-    "revision": "a5913ec9d1560120d06a73f47cacb565",
+    "revision": "5400b7b70c2275d5afaf05cc0a214445",
     "url": "/resorts/index.html"
   }
 ];
