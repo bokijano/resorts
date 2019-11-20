@@ -14,7 +14,7 @@ const ProductContext = React.createContext();
 
 export default class ProductProvider extends Component {
   state = {
-    proxy: "http://cors-anywhere.herokuapp.com/",
+    proxy: "https://cors-anywhere.herokuapp.com/",
     API_KEY: "fb4c116f915c61742654d62a921fffa2",
     forecastItem: [
       clearday,
@@ -49,6 +49,11 @@ export default class ProductProvider extends Component {
       isOpen: !this.state.isOpen,
       displayHomePage: false
     })
+  }
+  displayFromHomePage = () => {
+    this.setState({
+      displayHomePage: false
+    })    
   }  
   
   getValues(jsonData) {
@@ -204,7 +209,8 @@ export default class ProductProvider extends Component {
           toCelsius: this.toCelsius,
           getForecastIcon: this.getForecastIcon,
           handleToggle: this.handleToggle,
-          displayOtherPage: this.displayOtherPage
+          displayOtherPage: this.displayOtherPage,
+          displayFromHomePage: this.displayFromHomePage
         }}
       >
         {this.props.children}
