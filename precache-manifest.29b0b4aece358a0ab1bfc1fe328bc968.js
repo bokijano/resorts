@@ -1,39 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "d3912d497f0bd5ada19a",
-    "url": "/resorts/static/css/main.852a6222.chunk.css"
+    "revision": "6bd8aa48a9ac3da8f377",
+    "url": "/resorts/static/css/main.1ec8a11e.chunk.css"
   },
   {
-    "revision": "d3912d497f0bd5ada19a",
-    "url": "/resorts/static/js/main.d3912d49.chunk.js"
+    "revision": "6bd8aa48a9ac3da8f377",
+    "url": "/resorts/static/js/main.6bd8aa48.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
     "url": "/resorts/static/js/runtime~main.8f304fc1.js"
   },
   {
-    "revision": "e52ab514870f27d8ee67",
-    "url": "/resorts/static/css/2.4aea2420.chunk.css"
+    "revision": "5808dbbc3ce6b86287d8",
+    "url": "/resorts/static/css/2.96b2216f.chunk.css"
   },
   {
-    "revision": "e52ab514870f27d8ee67",
-    "url": "/resorts/static/js/2.e52ab514.chunk.js"
+    "revision": "5808dbbc3ce6b86287d8",
+    "url": "/resorts/static/js/2.5808dbbc.chunk.js"
   },
   {
     "revision": "492aef1167956247c2151bfb19b5a85f",
     "url": "/resorts/static/media/snow.492aef11.svg"
-  },
-  {
-    "revision": "730311993fec81df56db6376d38ace67",
-    "url": "/resorts/static/media/kopaonik.73031199.jpg"
-  },
-  {
-    "revision": "db2f4bff252887aa698c2632c5e03e13",
-    "url": "/resorts/static/media/zlatibor.db2f4bff.jpg"
-  },
-  {
-    "revision": "9c68700cc30f5302d016403e7f11e6d1",
-    "url": "/resorts/static/media/staraPlanina.9c68700c.jpg"
   },
   {
     "revision": "4b42731b96810f66246577702e146675",
@@ -68,7 +56,19 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/sleet.a0d9e9ae.svg"
   },
   {
-    "revision": "4df0dffb383d48c143c94dd80b0b630a",
+    "revision": "730311993fec81df56db6376d38ace67",
+    "url": "/resorts/static/media/kopaonik.73031199.jpg"
+  },
+  {
+    "revision": "db2f4bff252887aa698c2632c5e03e13",
+    "url": "/resorts/static/media/zlatibor.db2f4bff.jpg"
+  },
+  {
+    "revision": "9c68700cc30f5302d016403e7f11e6d1",
+    "url": "/resorts/static/media/staraPlanina.9c68700c.jpg"
+  },
+  {
+    "revision": "a5913ec9d1560120d06a73f47cacb565",
     "url": "/resorts/index.html"
   }
 ];
