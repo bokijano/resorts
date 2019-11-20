@@ -34,11 +34,26 @@ export default class ProductProvider extends Component {
     thirdDay: "",
     fourthDay: "",
     fifthDay: "",
-    dataKopaonik: {}
+    dataKopaonik: {},
+    isOpen: false,
+    displayHomePage: true
   };
+  handleToggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+      
+    });
+  };  
+  displayOtherPage = () => {
+    this.setState({
+      isOpen: !this.state.isOpen,
+      displayHomePage: false
+    })
+  }  
+  
   getValues(jsonData) {
-    const { temperature, icon } = jsonData.currently;
-    let forecast = { temperature, icon };
+    const { temperature, icon, apparentTemperature, summary } = jsonData.hourly.data[0];
+    let forecast = { temperature, icon, apparentTemperature, summary };
     let day1 = jsonData.daily.data[1];
     let time1 = day1.time;
     let icon1 = day1.icon;
@@ -87,8 +102,8 @@ export default class ProductProvider extends Component {
     const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.268045, 20.826309`;
     const data = await fetch(api);
     const jsonData = await data.json();
-    console.log(jsonData);
     this.getValues(jsonData);
+    console.log(this.state.forecast);
 
     let dataKopaonik = Object.assign(
       this.state.forecast,
@@ -187,7 +202,9 @@ export default class ProductProvider extends Component {
           ...this.state,
           convertUnix: this.convertUnix,
           toCelsius: this.toCelsius,
-          getForecastIcon: this.getForecastIcon
+          getForecastIcon: this.getForecastIcon,
+          handleToggle: this.handleToggle,
+          displayOtherPage: this.displayOtherPage
         }}
       >
         {this.props.children}

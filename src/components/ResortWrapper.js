@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 const ResortWrapper = styled.div`
   h1 {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     font-family: "Lobster", cursive;
     text-transform: capitalize;
     color: dodgerblue;
     animation-name: opacitytext;
     animation-duration: 4s;
+    @media screen and (max-width: 768px) {
+      margin-top: 80px;
+    }
   }
   @keyframes opacitytext {
     0% {

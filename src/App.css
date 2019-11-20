@@ -6,7 +6,7 @@
 }
 
 .mountain-pos {
-  margin-top: 30px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +49,40 @@
 .mountain-pos .temperature-content .degree-temp {
   font-weight: bolder;
   float: left;
+}
+
+.mountain-pos .temperature-content .apparent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  text-align: center;
+  max-height: 45px;
+}
+
+.mountain-pos .temperature-content .apparent .subj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.mountain-pos .temperature-content .apparent .subj .apparent-temp {
+  color: dodgerblue;
+  margin-left: 30%;
+  margin-top: -20px;
+}
+
+.mountain-pos .temperature-content .apparent .subj .degree-temp {
+  margin-top: -20px;
 }
 
 .mountain-pos .temperature-content button {

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar.js";
+import { ProductConsumer } from "./Context.js";
 
 import Home from "./pages/Home.js";
 import Kopaonik from "./components/kopaonik/kopaonik.js";
@@ -14,18 +15,27 @@ import { Route, Switch } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          {/*<Route exact path="/rooms" component={Rooms} />
+      <ProductConsumer>
+        {value => (
+          <React.Fragment>
+            <Navbar />
+            {value.displayHomePage ? (
+              <Home />) : (
+              <Switch>
+                <Route exact path="/" component={Home} />
+                {/*<Route exact path="/rooms" component={Rooms} />
           <Route exact path="/rooms/:single" component={SingleRoom} />*/}
-          <Route exact path="/kopaonik" component={Kopaonik} />
-          <Route exact path="/zlatibor" component={Zlatibor} />
-          <Route exact path="/staraPlanina" component={StaraPlanina} />
-          <Route component={Error} />
-        </Switch>
-      </React.Fragment>
+                <Route exact path="/kopaonik" component={Kopaonik} />
+                <Route exact path="/zlatibor" component={Zlatibor} />
+                <Route exact path="/staraPlanina" component={StaraPlanina} />
+                <Route component={Error} />
+              </Switch>
+            
+              
+            )}
+          </React.Fragment>
+        )}
+      </ProductConsumer>
     );
   }
 }

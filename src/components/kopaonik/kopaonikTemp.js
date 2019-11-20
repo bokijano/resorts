@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class kopaonikTemp extends Component {
   render() {
-    const { temperature, icon } = this.props.temp;
+    const { temperature, icon, apparentTemperature } = this.props.temp;
     const { toCelsius, getForecastIcon, convertUnix } = this.props.value;
     return (
       <div className="mountain-pos">
@@ -15,7 +15,16 @@ export default class kopaonikTemp extends Component {
           />
           <h3 className="temperature-degree">{toCelsius(temperature)}</h3>
           <span className="degree-temp">C</span>
-          <button type="button">next five days forecast</button>
+          <div className="apparent">
+            <p>Subjective</p>
+            <div className="subj">
+              <h3 className="apparent-temp">
+                {toCelsius(apparentTemperature)}
+              </h3>
+              <span className="degree-temp">C</span>
+            </div>
+          </div>
+          <button type="button">next period</button>
         </div>
       </div>
     );
