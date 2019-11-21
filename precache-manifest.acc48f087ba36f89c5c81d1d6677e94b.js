@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "ee0339b95d0eba4913cc",
-    "url": "/resorts/static/css/main.1ec8a11e.chunk.css"
+    "revision": "dd7b24b52ccba6dd6e6b",
+    "url": "/resorts/static/css/main.5b5387bd.chunk.css"
   },
   {
-    "revision": "ee0339b95d0eba4913cc",
-    "url": "/resorts/static/js/main.ee0339b9.chunk.js"
+    "revision": "dd7b24b52ccba6dd6e6b",
+    "url": "/resorts/static/js/main.dd7b24b5.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
     "url": "/resorts/static/js/runtime~main.8f304fc1.js"
   },
   {
-    "revision": "5808dbbc3ce6b86287d8",
-    "url": "/resorts/static/css/2.96b2216f.chunk.css"
+    "revision": "d0303123739ad210a3fb",
+    "url": "/resorts/static/css/2.b3dc2211.chunk.css"
   },
   {
-    "revision": "5808dbbc3ce6b86287d8",
-    "url": "/resorts/static/js/2.5808dbbc.chunk.js"
+    "revision": "d0303123739ad210a3fb",
+    "url": "/resorts/static/js/2.d0303123.chunk.js"
   },
   {
     "revision": "492aef1167956247c2151bfb19b5a85f",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/staraPlanina.9c68700c.jpg"
   },
   {
-    "revision": "5400b7b70c2275d5afaf05cc0a214445",
+    "revision": "efb2acf909283d5b8d62a866b182c883",
     "url": "/resorts/index.html"
   }
 ];
