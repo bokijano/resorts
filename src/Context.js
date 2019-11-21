@@ -34,65 +34,85 @@ export default class ProductProvider extends Component {
     thirdDay: "",
     fourthDay: "",
     fifthDay: "",
+    id: [1, 2, 3, 4, 5],
     dataKopaonik: {},
+    dataZlatibor: {},
+    dataStara: {},
+    mountains: ["Kopaonik", "Zlatibor", "Stara Planina"],
     isOpen: false,
-    displayHomePage: true
+    displayHomePage: true,
+    openModal: false
   };
   handleToggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
-      
     });
-  };  
+  };
   displayOtherPage = () => {
     this.setState({
       isOpen: !this.state.isOpen,
       displayHomePage: false
-    })
-  }
+    });
+  };
   displayFromHomePage = () => {
     this.setState({
       displayHomePage: false
-    })    
-  }  
-  
+    });
+  };
+  displayModal = () => {
+    console.log("working");
+    this.setState({
+      openModal: !this.state.openModal
+    });
+  };
+
   getValues(jsonData) {
-    const { temperature, icon, apparentTemperature, summary } = jsonData.hourly.data[0];
+    const {
+      temperature,
+      icon,
+      apparentTemperature,
+      summary
+    } = jsonData.hourly.data[0];
     let forecast = { temperature, icon, apparentTemperature, summary };
     let day1 = jsonData.daily.data[1];
     let time1 = day1.time;
     let icon1 = day1.icon;
     let tempMax1 = day1.temperatureMax;
     let tempMin1 = day1.temperatureMin;
-    let firstDay = { time1, icon1, tempMax1, tempMin1 };
+    let summary1 = day1.summary;
+    let firstDay = { time1, icon1, tempMax1, tempMin1, summary1 };
 
     let day2 = jsonData.daily.data[2];
     let time2 = day2.time;
     let icon2 = day2.icon;
     let tempMax2 = day2.temperatureMax;
     let tempMin2 = day2.temperatureMin;
-    let secondDay = { time2, icon2, tempMax2, tempMin2 };
+    let summary2 = day1.summary;
+    let secondDay = { time2, icon2, tempMax2, tempMin2, summary2 };
 
     let day3 = jsonData.daily.data[3];
     let time3 = day3.time;
     let icon3 = day3.icon;
     let tempMax3 = day3.temperatureMax;
     let tempMin3 = day3.temperatureMin;
-    let thirdDay = { time3, icon3, tempMax3, tempMin3 };
+    let summary3 = day1.summary;
+    let thirdDay = { time3, icon3, tempMax3, tempMin3, summary3 };
 
     let day4 = jsonData.daily.data[4];
     let time4 = day4.time;
     let icon4 = day4.icon;
     let tempMax4 = day4.temperatureMax;
     let tempMin4 = day4.temperatureMin;
-    let fourthDay = { time4, icon4, tempMax4, tempMin4 };
+    let summary4 = day1.summary;
+    let fourthDay = { time4, icon4, tempMax4, tempMin4, summary4 };
 
     let day5 = jsonData.daily.data[5];
     let time5 = day5.time;
     let icon5 = day5.icon;
     let tempMax5 = day5.temperatureMax;
     let tempMin5 = day5.temperatureMin;
-    let fifthDay = { time5, icon5, tempMax5, tempMin5 };
+    let summary5 = day1.summary;
+    let fifthDay = { time5, icon5, tempMax5, tempMin5, summary5 };
 
     this.setState({
       forecast: forecast,
@@ -108,7 +128,6 @@ export default class ProductProvider extends Component {
     const data = await fetch(api);
     const jsonData = await data.json();
     this.getValues(jsonData);
-    console.log(this.state.forecast);
 
     let dataKopaonik = Object.assign(
       this.state.forecast,
@@ -118,40 +137,72 @@ export default class ProductProvider extends Component {
       this.state.fourthDay,
       this.state.fifthDay
     );
-    console.log(dataKopaonik);
 
     this.setState({
       dataKopaonik: dataKopaonik
     });
   }
+  async getTemperatureStara() {
+    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.369493, 22.608533`;
+    const data = await fetch(api);
+    const jsonData = await data.json();
+    this.getValues(jsonData);
+
+    let dataStara = Object.assign(
+      this.state.forecast,
+      this.state.firstDay,
+      this.state.secondDay,
+      this.state.thirdDay,
+      this.state.fourthDay,
+      this.state.fifthDay
+    );
+
+    this.setState({
+      dataStara: dataStara
+    });
+  }
+  async getTemperatureZlatibor() {
+    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.7166638, 19.699997`;
+    const data = await fetch(api);
+    const jsonData = await data.json();
+    this.getValues(jsonData);
+    
+
+    let dataZlatibor = Object.assign(
+      this.state.forecast,
+      this.state.firstDay,
+      this.state.secondDay,
+      this.state.thirdDay,
+      this.state.fourthDay,
+      this.state.fifthDay
+    );
+
+    this.setState({
+      dataZlatibor: dataZlatibor
+    });
+  }
   componentDidMount() {
     this.getTemperatureKopaonik();
+    this.getTemperatureZlatibor();
+    this.getTemperatureStara();
   }
 
   convertUnix = unixTime => {
     let months = [
-      "January",
-      "February",
-      "March",
-      "April",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
       "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
     ];
-    let days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     let date = new Date(unixTime * 1000);
     let year = date.getFullYear();
@@ -159,7 +210,7 @@ export default class ProductProvider extends Component {
     let day = date.getDate();
     let dayOfWeek = days[date.getDay()];
 
-    let currentDate = dayOfWeek + " " + day + ". " + month + " " + year + ".";
+    let currentDate = dayOfWeek + ", " + day + ". " + month + " " + year + ".";
     return currentDate;
   };
   toCelsius(degree) {
@@ -210,7 +261,8 @@ export default class ProductProvider extends Component {
           getForecastIcon: this.getForecastIcon,
           handleToggle: this.handleToggle,
           displayOtherPage: this.displayOtherPage,
-          displayFromHomePage: this.displayFromHomePage
+          displayFromHomePage: this.displayFromHomePage,
+          displayModal: this.state.displayModal
         }}
       >
         {this.props.children}

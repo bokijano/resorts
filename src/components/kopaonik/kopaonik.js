@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "./../../Context";
-import KopaonikTemp from "./kopaonikTemp.js";
+import TemperatureCurrently from "./../temp files/temperatureCurrently.js";
 
 export default class kopaonik extends Component {
   render() {
     return (
       <ProductConsumer>
         {value => (
-          <KopaonikTemp temp={value.dataKopaonik} value={value} />
+          <TemperatureCurrently
+           mountain={value.mountains[0]}
+           temp={value.dataKopaonik} value={value} />
         )}
       </ProductConsumer>
     );

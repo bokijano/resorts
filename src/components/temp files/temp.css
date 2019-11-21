@@ -1,0 +1,152 @@
+.long {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .long {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.show-long {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .show-long {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.long-term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.long-term .firstDay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 20%;
+}
+
+.long-term .firstDay p {
+  font-family: "Calistoga", cursive;
+  font-weight: bolder;
+  text-align: center;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .long-term .firstDay p {
+    font-size: 10px;
+  }
+}
+
+.long-term .firstDay .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.long-term .firstDay .first .temp-icon {
+  margin: 1px;
+  height: 35px;
+  width: 35px;
+}
+
+.long-term .firstDay .first .forecastFirst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.long-term .firstDay .first .forecastFirst .maxTemp,
+.long-term .firstDay .first .forecastFirst .minTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.long-term .firstDay .first .forecastFirst .maxTemp #max,
+.long-term .firstDay .first .forecastFirst .minTemp #max {
+  color: red;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.long-term .firstDay .first .forecastFirst .maxTemp #min,
+.long-term .firstDay .first .forecastFirst .minTemp #min {
+  color: green;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: bolder;
+}
+
+.long-term .firstDay .first .forecastFirst .maxTemp #minText,
+.long-term .firstDay .first .forecastFirst .minTemp #minText {
+  margin-left: 4px;
+  margin-top: 2px;
+  font-family: "Calistoga", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .long-term .firstDay .first .forecastFirst .maxTemp #minText,
+  .long-term .firstDay .first .forecastFirst .minTemp #minText {
+    font-size: 10px;
+  }
+}
+
+.long-term .firstDay .first .forecastFirst .maxTemp #text,
+.long-term .firstDay .first .forecastFirst .minTemp #text {
+  text-align: center;
+  font-family: "Calistoga", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .long-term .firstDay .first .forecastFirst .maxTemp #text,
+  .long-term .firstDay .first .forecastFirst .minTemp #text {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=temp.css.map */
