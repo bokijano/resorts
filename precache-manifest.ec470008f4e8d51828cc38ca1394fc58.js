@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "10dbadcfd3de8a166043",
-    "url": "/resorts/static/css/main.e4775133.chunk.css"
+    "revision": "70641e9e092903c08518",
+    "url": "/resorts/static/css/main.b4953562.chunk.css"
   },
   {
-    "revision": "10dbadcfd3de8a166043",
-    "url": "/resorts/static/js/main.10dbadcf.chunk.js"
+    "revision": "70641e9e092903c08518",
+    "url": "/resorts/static/js/main.70641e9e.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
     "url": "/resorts/static/js/runtime~main.8f304fc1.js"
   },
   {
-    "revision": "3744e4fb94a0adcf3b3b",
-    "url": "/resorts/static/css/2.f6470cd0.chunk.css"
+    "revision": "79ce7b8105b36d426607",
+    "url": "/resorts/static/css/2.2458b61e.chunk.css"
   },
   {
-    "revision": "3744e4fb94a0adcf3b3b",
-    "url": "/resorts/static/js/2.3744e4fb.chunk.js"
+    "revision": "79ce7b8105b36d426607",
+    "url": "/resorts/static/js/2.79ce7b81.chunk.js"
   },
   {
     "revision": "492aef1167956247c2151bfb19b5a85f",
@@ -68,10 +68,6 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/staraPlanina.9c68700c.jpg"
   },
   {
-    "revision": "516fd1d73f7b46a40aa8e1f12da146ee",
-    "url": "/resorts/static/media/kopaonikBack.516fd1d7.jpg"
-  },
-  {
     "revision": "cb442e67dbac240356afb60a8f848887",
     "url": "/resorts/static/media/zlatiborBack.cb442e67.jpg"
   },
@@ -80,7 +76,11 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/staraBack.4eea6bed.jpg"
   },
   {
-    "revision": "a8e1c90ab2991cee3af3c18ed66e0fa0",
+    "revision": "516fd1d73f7b46a40aa8e1f12da146ee",
+    "url": "/resorts/static/media/kopaonikBack.516fd1d7.jpg"
+  },
+  {
+    "revision": "a2812865342497ff063d5451eb99804f",
     "url": "/resorts/index.html"
   }
 ];
