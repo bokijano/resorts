@@ -115,12 +115,27 @@
   font-weight: bolder;
 }
 
+@media screen and (max-width: 500px) {
+  .long-term .firstDay .first .forecastFirst .maxTemp #max,
+  .long-term .firstDay .first .forecastFirst .minTemp #max {
+    font-size: 10px;
+    margin-left: -3px;
+  }
+}
+
 .long-term .firstDay .first .forecastFirst .maxTemp #min,
 .long-term .firstDay .first .forecastFirst .minTemp #min {
   color: green;
   font-size: 12px;
   margin-top: 2px;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+  .long-term .firstDay .first .forecastFirst .maxTemp #min,
+  .long-term .firstDay .first .forecastFirst .minTemp #min {
+    font-size: 8px;
+  }
 }
 
 .long-term .firstDay .first .forecastFirst .maxTemp #minText,

@@ -12,6 +12,12 @@
   h1 {
     text-align: center;
     font-family: "Bebas Neue", cursive !important;
+    font-weight: bolder;
+    @media screen and (max-width: 500px) {
+      margin-left: 5px;
+      margin-top: 5px;
+      font-size: 20px;
+    }
   }
   .temperature-content {
     display: flex;
@@ -55,6 +61,56 @@
     }
     button {
       margin-left: 30px;
+    }
+  }
+}
+
+.back-img {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.services {
+  padding: 5rem 0;
+  .services-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    //grid-row-gap: 2rem;
+    //grid-column-gap: 50px;
+    @media screen and (min-width: 992px) {
+      width: 95vw;
+      max-width: 1170px;
+    }
+  }
+}
+.service {
+  width: 20%;
+  span {
+    display: inline-block;
+    color: #af9a7d;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  h6 {
+    letter-spacing: 2px;
+    height: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+  p {
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
     }
   }
 }

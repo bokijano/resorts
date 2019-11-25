@@ -20,7 +20,8 @@ class App extends Component {
           <React.Fragment>
             <Navbar />
             {value.displayHomePage ? (
-              <Home />) : (
+                <Home />
+            ) : (
               <Switch>
                 <Route exact path="/" component={Home} />
                 {/*<Route exact path="/rooms" component={Rooms} />
@@ -30,8 +31,6 @@ class App extends Component {
                 <Route exact path="/staraPlanina" component={StaraPlanina} />
                 <Route component={Error} />
               </Switch>
-            
-              
             )}
           </React.Fragment>
         )}

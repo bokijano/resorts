@@ -19,6 +19,9 @@ const ButtonContainer = styled.button`
   &:focus {
     outline: none;
   }
+  @media screen and (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export default ButtonContainer;
