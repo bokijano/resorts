@@ -98,16 +98,62 @@
   margin-left: 30px;
 }
 
-.back-img {
-  position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+.mountain-pict .back-img {
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mountain-pict .back-img {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+.mountain-pict .rooms {
+  position: relative;
+  margin-top: 20%;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mountain-pict .rooms {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.mountain-pict .rooms .rooms-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mountain-pict .rooms .rooms-choose a {
+  text-decoration: none;
+  background-color: whitesmoke !important;
 }
 
 .services {
   padding: 5rem 0;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    margin-top: 50px;
+  }
 }
 
 .services .services-center {
@@ -141,7 +187,7 @@
 
 .service h6 {
   letter-spacing: 2px;
-  height: 30px;
+  height: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -160,5 +206,15 @@
   .service p {
     font-size: 12px;
   }
+}
+
+.section-title {
+  background-color: whitesmoke;
+  text-align: center;
+  color: dodgerblue;
+  font-family: "Calistoga", cursive;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 10px;
 }
 /*# sourceMappingURL=App.css.map */
