@@ -16,11 +16,11 @@ export default class kopaonik extends Component {
               temp={value.dataKopaonik}
               value={value}
             />
-            <img
+            {/*<img
               src={kopaonikBack}
               alt="kopaonik background"
               className="img-fluid back-img"
-            />
+            />*/}
             <Service />
           </div>
         )}
