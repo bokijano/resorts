@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "258467bc1f398fdf4b05",
-    "url": "/resorts/static/css/main.6308685e.chunk.css"
+    "revision": "d39391211cd4d4563141",
+    "url": "/resorts/static/css/main.ede3bd2c.chunk.css"
   },
   {
-    "revision": "258467bc1f398fdf4b05",
-    "url": "/resorts/static/js/main.258467bc.chunk.js"
+    "revision": "d39391211cd4d4563141",
+    "url": "/resorts/static/js/main.d3939121.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/staraBack.4eea6bed.jpg"
   },
   {
-    "revision": "8aca73463e4539d05ae7a33ec8bc2f94",
+    "revision": "a94f71595f1c1081f51ba02cef2e56c1",
     "url": "/resorts/index.html"
   }
 ];
