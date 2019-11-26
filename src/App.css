@@ -100,9 +100,9 @@
 
 .mountain-pict .back-img {
   position: absolute;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 20px;
 }
 
@@ -111,12 +111,6 @@
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-  }
-}
-
-@media screen and (min-width: 951px) {
-  .mountain-pict .back-img {
-    height: 65%;
   }
 }
 
@@ -158,25 +152,25 @@
 
 @media screen and (max-width: 400px) {
   .services {
-    margin-top: 20px;
+    margin-top: -40px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 401px) {
   .services {
-    margin-top: -30px;
+    margin-top: 140px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .services {
-    margin-top: 120px;
-  }
-}
-
-@media screen and (max-width: 951px) {
+@media screen and (min-width: 868px) {
   .services {
     margin-top: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    margin-top: 220px;
   }
 }
 
