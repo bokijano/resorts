@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "./../../Context";
 import TemperatureCurrently from "./../temp files/temperatureCurrently.js";
-import stara from "./../../images/staraBack.jpg";
+import stara from "./../../images/Stara/staraBack.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Service from "./../hero/Services.js";
 import ButtonContainer from "./../Button.js";
