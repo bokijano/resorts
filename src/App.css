@@ -100,9 +100,9 @@
 
 .mountain-pict .back-img {
   position: absolute;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 20px;
 }
 
@@ -146,31 +146,50 @@
 }
 
 .services {
+  text-align: center;
   padding: 5rem 0;
   margin-top: -30px;
 }
 
 @media screen and (max-width: 400px) {
   .services {
-    margin-top: -40px;
+    margin-top: -60px;
   }
 }
 
 @media screen and (min-width: 401px) {
   .services {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .services {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (min-width: 686px) {
+  .services {
     margin-top: 140px;
   }
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 786px) {
   .services {
-    margin-top: 180px;
+    margin-top: 160px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .services {
+    margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .services {
-    margin-top: 220px;
+    margin-top: 70px;
   }
 }
 
@@ -180,6 +199,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -192,36 +213,43 @@
   }
 }
 
-.service {
+.services .services-center .service {
   width: 20%;
+  margin-bottom: 5px;
 }
 
-.service span {
+@media screen and (max-width: 767px) {
+  .services .services-center .service {
+    width: 40%;
+  }
+}
+
+.services .services-center .service span {
   display: inline-block;
   color: #af9a7d;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.service h6 {
+.services .services-center .service h6 {
   letter-spacing: 2px;
   height: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .service h6 {
+  .services .services-center .service h6 {
     font-size: 15px;
   }
 }
 
-.service p {
-  text-align: justify;
+.services .services-center .service p {
+  text-align: center;
   width: 90%;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .service p {
+  .services .services-center .service p {
     font-size: 12px;
   }
 }
@@ -234,5 +262,33 @@
   text-transform: capitalize;
   border-radius: 10px;
   padding: 10px;
+}
+
+/* featured rooms */
+.room-title-center {
+  font-family: "Calistoga", cursive !important;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.featured-rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.featured-rooms .rooms-center {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 776px) {
+  .featured-rooms .rooms-center {
+    width: 25vw;
+  }
 }
 /*# sourceMappingURL=App.css.map */

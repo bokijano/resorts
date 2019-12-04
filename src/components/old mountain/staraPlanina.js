@@ -7,8 +7,19 @@ import Service from "./../hero/Services.js";
 import ButtonContainer from "./../Button.js";
 import Title from "./../hero/Title.js";
 import { Link } from "react-router-dom";
+import FeaturedRooms from "./../hero/FeaturedRooms.js";
+import Single from "./../../images/Stara/rooms/single/singleStara.jpg";
+import Double from "./../../images/Stara/rooms/double/doubleStara.jpg";
+import Family from "./../../images/Stara/rooms/family/familyStara.jpg";
 
 export default class staraPlanina extends Component {
+  state = {
+    rooms: [
+      { id: 1, src: Single, price: 15, title: "single room" },
+      { id: 2, src: Double, price: 25, title: "double room" },
+      { id: 3, src: Family, price: 40, title: "family room" }
+    ]
+  };
   render() {
     return (
       <ProductConsumer>
@@ -28,14 +39,12 @@ export default class staraPlanina extends Component {
               <Title mountain="stara planina" price="15" />
               <div className="rooms-choose">
                 <ButtonContainer>
-                  <Link to="/rooms">regular rooms</Link>
-                </ButtonContainer>
-                <ButtonContainer>
-                  <Link to="/rooms">luxury rooms</Link>
+                  <Link to="/rooms">see all rooms</Link>
                 </ButtonContainer>
               </div>
             </div>
             <Service />
+            <FeaturedRooms rooms={this.state.rooms} />
           </div>
         )}
       </ProductConsumer>

@@ -68,9 +68,9 @@
 .mountain-pict {
   .back-img {
     position: absolute;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 20px;
     @media screen and (max-width: 950px) {
       width: 96%;
@@ -103,53 +103,68 @@
 }
 
 .services {
+  text-align: center;
   padding: 5rem 0;
   margin-top: -30px;
   @media screen and (max-width: 400px) {
-    margin-top: -40px;
+    margin-top: -60px;
   }
   @media screen and (min-width: 401px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 630px) {
+    margin-top: 90px;
+  }
+  @media screen and (min-width: 686px) {
     margin-top: 140px;
   }
-  @media screen and (min-width: 868px) {
-    margin-top: 180px;
+  @media screen and (min-width: 786px) {
+    margin-top: 160px;
+  }
+  @media screen and (min-width: 950px) {
+    margin-top: 10px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 220px;
+    margin-top: 70px;
   }
 
   .services-center {
     width: 90vw;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     @media screen and (min-width: 992px) {
       width: 95vw;
       max-width: 1170px;
     }
-  }
-}
-.service {
-  width: 20%;
-  span {
-    display: inline-block;
-    color: #af9a7d;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  h6 {
-    letter-spacing: 2px;
-    height: 50px;
-    @media screen and (max-width: 768px) {
-      font-size: 15px;
-    }
-  }
-  p {
-    text-align: justify;
-    width: 90%;
-    margin: 0 auto;
-    @media screen and (max-width: 768px) {
-      font-size: 12px;
+    .service {
+      width: 20%;
+      margin-bottom: 5px;
+      @media screen and (max-width: 767px) {
+        width: 40%;
+      }
+      span {
+        display: inline-block;
+        color: #af9a7d;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      h6 {
+        letter-spacing: 2px;
+        height: 50px;
+        @media screen and (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
+      p {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
@@ -162,4 +177,24 @@
   text-transform: capitalize;
   border-radius: 10px;
   padding: 10px;
+}
+
+/* featured rooms */
+.room-title-center {
+  font-family: "Calistoga", cursive !important;
+  text-align: center;
+  font-weight: bolder;
+}
+.featured-rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .rooms-center {
+    width: 70vw;
+    margin: 0 auto;
+
+    @media screen and (min-width: 776px) {
+      width: 25vw;
+    }
+  }
 }

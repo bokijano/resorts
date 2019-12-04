@@ -7,8 +7,19 @@ import Service from "./../hero/Services.js";
 import ButtonContainer from "./../Button.js";
 import Title from "./../hero/Title.js";
 import { Link } from "react-router-dom";
+import FeaturedRooms from "./../hero/FeaturedRooms.js";
+import Single from "./../../images/Zlatibor/rooms/single/singleZlatibor.jpg";
+import Double from "./../../images/Zlatibor/rooms/double/doubleZlatibor.jpg";
+import Family from "./../../images/Zlatibor/rooms/family/familyZlatibor.jpg";
 
 export default class zlatibor extends Component {
+  state = {
+    rooms: [
+      { id: 1, src: Single, price: 20, title: "single room" },
+      { id: 2, src: Double, price: 35, title: "double room" },
+      { id: 3, src: Family, price: 50, title: "family room" }
+    ]
+  };
   render() {
     return (
       <ProductConsumer>
@@ -28,14 +39,12 @@ export default class zlatibor extends Component {
               <Title mountain="zlatibor" price="20" />
               <div className="rooms-choose">
                 <ButtonContainer>
-                  <Link to="/rooms">regular rooms</Link>
-                </ButtonContainer>
-                <ButtonContainer>
-                  <Link to="/rooms">luxury rooms</Link>
+                  <Link to="/rooms">see all rooms</Link>
                 </ButtonContainer>
               </div>
             </div>
             <Service />
+            <FeaturedRooms rooms={this.state.rooms} />
           </div>
         )}
       </ProductConsumer>
