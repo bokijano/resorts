@@ -62,5 +62,31 @@ const ResortWrapper = styled.div`
     transform: translateX(0%);
     cursor: pointer;
   }
+
+  .nature {
+    margin-top: 50px;
+    display: flex;
+  }
+  .nat-one,
+  .nat-two,
+  .nat-three,
+  .nat-four {
+    border: 0.04rem solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    margin: 4px;
+  }
+  .nat-one {
+    transform: rotate(20deg);
+  }
+  .nat-two {
+    transform: rotate(-10deg);
+  }
+  .nat-three {
+    transform: rotate(-5deg);
+  }
+  .nat-four {
+    transform: rotate(15deg);
+  }
 `;
 export default ResortWrapper;

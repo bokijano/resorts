@@ -184,6 +184,7 @@
   font-family: "Calistoga", cursive !important;
   text-align: center;
   font-weight: bolder;
+  font-size: 2rem;
 }
 .featured-rooms {
   display: flex;
@@ -191,8 +192,37 @@
   justify-content: space-around;
   .rooms-center {
     width: 70vw;
-    margin: 0 auto;
-
+    margin: 10px auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    position: relative;
+    .room-price {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: "Bebas Neue", cursive;
+      text-align: center;
+      padding: 2px;
+      background: whitesmoke;
+      z-index: 1;
+      border-bottom-right-radius: 10px;
+      h5 {
+        padding: 3px;
+      }
+      h6 {
+        margin-top: -7px;
+      }
+    }
+    .room-bads {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      //font-family: 'Bebas Neue', cursive;
+      font-family: "Cabin", sans-serif;
+      //font-family: 'Lobster', cursive;
+      text-transform: capitalize;
+      padding-top: 5px;
+    }
     @media screen and (min-width: 776px) {
       width: 25vw;
     }

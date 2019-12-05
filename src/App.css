@@ -269,6 +269,7 @@
   font-family: "Calistoga", cursive !important;
   text-align: center;
   font-weight: bolder;
+  font-size: 2rem;
 }
 
 .featured-rooms {
@@ -283,7 +284,40 @@
 
 .featured-rooms .rooms-center {
   width: 70vw;
-  margin: 0 auto;
+  margin: 10px auto;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  position: relative;
+}
+
+.featured-rooms .rooms-center .room-price {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding: 2px;
+  background: whitesmoke;
+  z-index: 1;
+  border-bottom-right-radius: 10px;
+}
+
+.featured-rooms .rooms-center .room-price h5 {
+  padding: 3px;
+}
+
+.featured-rooms .rooms-center .room-price h6 {
+  margin-top: -7px;
+}
+
+.featured-rooms .rooms-center .room-bads {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Cabin", sans-serif;
+  text-transform: capitalize;
+  padding-top: 5px;
 }
 
 @media screen and (min-width: 776px) {

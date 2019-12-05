@@ -11,9 +11,14 @@ export default class FeaturedRooms extends Component {
           {rooms.map(room => {
             return (
               <div key={room.id} className="rooms-center">
-                <p>{room.price}</p>
+                <div className="room-price">
+                   <h5>from ${room.price}</h5>
+                   <h6>per night</h6>
+                </div>
+                
                 <img src={room.src} alt="single" className="img-fluid" />
-                <p>{room.title}</p>
+                
+                <p className="room-bads">{room.title}</p>
               </div>
             );
           })}
