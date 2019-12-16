@@ -72,7 +72,7 @@ export default class ProductProvider extends Component {
       icon,
       apparentTemperature,
       summary
-    } = jsonData.hourly.data[0];
+    } = jsonData.currently;
     let forecast = { temperature, icon, apparentTemperature, summary };
     let day1 = jsonData.daily.data[1];
     let time1 = day1.time;
@@ -143,7 +143,7 @@ export default class ProductProvider extends Component {
     });
   }
   async getTemperatureStara() {
-    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.369493, 22.608533`;
+    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.3706, 22.6121`;
     const data = await fetch(api);
     const jsonData = await data.json();
     this.getValues(jsonData);
@@ -162,11 +162,10 @@ export default class ProductProvider extends Component {
     });
   }
   async getTemperatureZlatibor() {
-    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.7166638, 19.699997`;
+    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.666664, 19.6999972`;
     const data = await fetch(api);
     const jsonData = await data.json();
     this.getValues(jsonData);
-    
 
     let dataZlatibor = Object.assign(
       this.state.forecast,

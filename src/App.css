@@ -283,6 +283,7 @@
 }
 
 .featured-rooms .rooms-center {
+  cursor: pointer;
   width: 70vw;
   margin: 10px auto;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
@@ -296,10 +297,10 @@
   left: 0;
   top: 0;
   font-family: "Bebas Neue", cursive;
+  color: #333 !important;
   text-align: center;
   padding: 2px;
   background: whitesmoke;
-  z-index: 1;
   border-bottom-right-radius: 10px;
 }
 
@@ -315,6 +316,7 @@
   text-align: center;
   font-weight: bolder;
   font-size: 1.4rem;
+  color: #333 !important;
   font-family: "Cabin", sans-serif;
   text-transform: capitalize;
   padding-top: 5px;
@@ -322,6 +324,43 @@
 
 @media screen and (min-width: 776px) {
   .featured-rooms .rooms-center {
+    width: 25vw;
+  }
+}
+
+.featured-rooms .rooms-center:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.featured-rooms .rooms-center:hover .room-bads {
+  font-size: 1.7rem;
+  padding-top: 10px;
+  font-weight: bolder;
+  -webkit-transition: all 1.3s linear;
+  transition: all 1.3s linear;
+}
+
+/* display rooms: single, double, family */
+.rooms-display {
+  position: relative;
+}
+
+.rooms-display .person-rooms-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+@media screen and (min-width: 776px) {
+  .rooms-display .person-rooms-display {
     width: 25vw;
   }
 }

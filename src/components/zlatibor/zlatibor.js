@@ -15,9 +15,9 @@ import Family from "./../../images/Zlatibor/rooms/family/familyZlatibor.jpg";
 export default class zlatibor extends Component {
   state = {
     rooms: [
-      { id: 1, src: Single, price: 20, title: "single room" },
-      { id: 2, src: Double, price: 35, title: "double room" },
-      { id: 3, src: Family, price: 50, title: "family room" }
+      { id: 1, src: Single, price: 20, title: "single room", link: "/singleZlatibor" },
+      { id: 2, src: Double, price: 35, title: "double room", link: "/doubleZlatibor" },
+      { id: 3, src: Family, price: 50, title: "family room", link: "/familyZlatibor" }
     ]
   };
   render() {

@@ -15,9 +15,9 @@ import Family from "./../../images/Stara/rooms/family/familyStara.jpg";
 export default class staraPlanina extends Component {
   state = {
     rooms: [
-      { id: 1, src: Single, price: 15, title: "single room" },
-      { id: 2, src: Double, price: 25, title: "double room" },
-      { id: 3, src: Family, price: 40, title: "family room" }
+      { id: 1, src: Single, price: 15, title: "single room", link: "/singleStara" },
+      { id: 2, src: Double, price: 25, title: "double room", link: "/doubleStara"  },
+      { id: 3, src: Family, price: 40, title: "family room", link: "/familyStara"  }
     ]
   };
   render() {

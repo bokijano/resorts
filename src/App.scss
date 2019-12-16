@@ -191,6 +191,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   .rooms-center {
+    cursor: pointer;
     width: 70vw;
     margin: 10px auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
@@ -201,10 +202,10 @@
       left: 0;
       top: 0;
       font-family: "Bebas Neue", cursive;
+      color: #333 !important;
       text-align: center;
       padding: 2px;
       background: whitesmoke;
-      z-index: 1;
       border-bottom-right-radius: 10px;
       h5 {
         padding: 3px;
@@ -213,10 +214,12 @@
         margin-top: -7px;
       }
     }
+
     .room-bads {
       text-align: center;
       font-weight: bolder;
       font-size: 1.4rem;
+      color: #333 !important;
       //font-family: 'Bebas Neue', cursive;
       font-family: "Cabin", sans-serif;
       //font-family: 'Lobster', cursive;
@@ -226,5 +229,16 @@
     @media screen and (min-width: 776px) {
       width: 25vw;
     }
+
+    &:hover {
+      filter: grayscale(80%);
+      .room-bads {
+        font-size: 1.7rem;
+        padding-top: 10px;
+        font-weight: bolder;
+        transition: all 1.3s linear;
+      }
+    }
   }
 }
+

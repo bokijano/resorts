@@ -15,9 +15,9 @@ import Family from "./../../images/Kopaonik/rooms/family/familyKopaonik.jpg";
 export default class kopaonik extends Component {
   state = {
     rooms: [
-      { id: 1, src: Single, price: 29, title: "single room" },
-      { id: 2, src: Double, price: 49, title: "double room" },
-      { id: 3, src: Family, price: 70, title: "family room" }
+      { id: 1, src: Single, price: 29, title: "single room", link: "/singleKopaonik" },
+      { id: 2, src: Double, price: 49, title: "double room", link: "/doubleKopaonik"  },
+      { id: 3, src: Family, price: 70, title: "family room", link: "/familyKopaonik"  }
     ]
   };
   render() {
