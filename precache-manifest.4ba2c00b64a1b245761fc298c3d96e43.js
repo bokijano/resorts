@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "67403116447b6c50b079",
-    "url": "/resorts/static/css/main.711277c6.chunk.css"
+    "revision": "6b508feab9da8662087e",
+    "url": "/resorts/static/css/main.9dc1521a.chunk.css"
   },
   {
-    "revision": "67403116447b6c50b079",
-    "url": "/resorts/static/js/main.67403116.chunk.js"
+    "revision": "6b508feab9da8662087e",
+    "url": "/resorts/static/js/main.6b508fea.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/familyStara.023462d8.jpg"
   },
   {
-    "revision": "fe23af16d6ffda27c7c96e4db414c0ef",
+    "revision": "f379adf0503dff0737014f2fbcfb2225",
     "url": "/resorts/index.html"
   }
 ];
