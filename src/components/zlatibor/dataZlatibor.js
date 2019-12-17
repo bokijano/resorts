@@ -1,11 +1,11 @@
-const dataKopaonik = {
+const dataZlatibor = {
   single: [
     {
       id: 1,
       name: "single economy",
       slug: "single-economy",
       type: "single",
-      price: 29,
+      price: 20,
       capacity: 1,
       pets: false,
       breakfast: false,
@@ -18,7 +18,7 @@ const dataKopaonik = {
       name: "single standard",
       slug: "single-standard",
       type: "single",
-      price: 39,
+      price: 31,
       capacity: 1,
       pets: false,
       breakfast: true,
@@ -31,7 +31,7 @@ const dataKopaonik = {
       name: "single luxury",
       slug: "single-luxury",
       type: "single",
-      price: 49,
+      price: 39,
       capacity: 1,
       pets: true,
       breakfast: true,
@@ -46,7 +46,7 @@ const dataKopaonik = {
       name: "double economy",
       slug: "double-economy",
       type: "double",
-      price: 49,
+      price: 35,
       capacity: 2,
       pets: false,
       breakfast: false,
@@ -59,7 +59,7 @@ const dataKopaonik = {
       name: "double standard",
       slug: "double-standard",
       type: "double",
-      price: 62,
+      price: 45,
       capacity: 2,
       pets: true,
       breakfast: true,
@@ -72,7 +72,7 @@ const dataKopaonik = {
       name: "double luxury",
       slug: "double-luxury",
       type: "double",
-      price: 85,
+      price: 55,
       capacity: 2,
       pets: true,
       breakfast: true,
@@ -87,7 +87,7 @@ const dataKopaonik = {
       name: "family economy",
       slug: "family-economy",
       type: "family",
-      price: 70,
+      price: 50,
       capacity: 4,
       pets: false,
       breakfast: false,
@@ -100,7 +100,7 @@ const dataKopaonik = {
       name: "family standard",
       slug: "family-standard",
       type: "family",
-      price: 99,
+      price: 69,
       capacity: 5,
       pets: true,
       breakfast: true,
@@ -113,7 +113,7 @@ const dataKopaonik = {
       name: "family luxury",
       slug: "family-luxury",
       type: "family",
-      price: 139,
+      price: 109,
       capacity: 6,
       pets: true,
       breakfast: true,
@@ -124,4 +124,4 @@ const dataKopaonik = {
   ]
 };
 
-export default dataKopaonik;
+export default dataZlatibor;

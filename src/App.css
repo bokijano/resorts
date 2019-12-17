@@ -282,6 +282,42 @@
       justify-content: space-around;
 }
 
+.featured-rooms .rooms-description {
+  width: 70vw;
+  margin: 10px auto;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  padding: 2px;
+}
+
+.featured-rooms .rooms-description .room-bads {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: #333 !important;
+  font-family: "Cabin", sans-serif;
+  text-transform: capitalize;
+  padding-top: 5px;
+}
+
+.featured-rooms .rooms-description .room-descr {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.featured-rooms .rooms-description .room-descript {
+  font-family: "Cabin", sans-serif;
+  margin: 5px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 776px) {
+  .featured-rooms .rooms-description {
+    width: 25vw;
+  }
+}
+
 .featured-rooms .rooms-center {
   cursor: pointer;
   width: 70vw;
@@ -341,27 +377,5 @@
   transition: all 1.3s linear;
 }
 
-/* display rooms: single, double, family */
-.rooms-display {
-  position: relative;
-}
-
-.rooms-display .person-rooms-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: absolute;
-  right: 0;
-  top: 50%;
-}
-
-@media screen and (min-width: 776px) {
-  .rooms-display .person-rooms-display {
-    width: 25vw;
-  }
-}
+/* room description */
 /*# sourceMappingURL=App.css.map */

@@ -5,39 +5,39 @@ const dataKopaonik = {
       name: "single economy",
       slug: "single-economy",
       type: "single",
-      price: 29,
+      price: 15,
       capacity: 1,
-      pets: false,
+      pets: true,
       breakfast: false,
       internet: false,
       description:
-        "A small single room in a mountain house 2km from the center with shared kitchen and bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
+        "A small single room in a mountain house in the village 2km from the Babin Zub with shared kitchen and bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain. Great place for wonderful tim in beautifull nature."
     },
     {
       id: 2,
       name: "single standard",
       slug: "single-standard",
       type: "single",
-      price: 39,
+      price: 20,
       capacity: 1,
       pets: false,
       breakfast: true,
       internet: true,
       description:
-        "A  single room in a mountain house 800m from the center with kitchen and shared bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
+        "A  single room in a mountain house 500m from the Babin Zub with kitchen and shared bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
     },
     {
       id: 3,
       name: "single luxury",
       slug: "single-luxury",
       type: "single",
-      price: 49,
+      price: 29,
       capacity: 1,
       pets: true,
       breakfast: true,
       internet: true,
       description:
-        "A single room in a mountain hotel in the center with kitchen and bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
+        "A single room in a mountain house in the center with kitchen and bathroom. It provides all the conditions for an ideal vacation with great view of thepeaks of the mountain."
     }
   ],
   double: [
@@ -46,33 +46,33 @@ const dataKopaonik = {
       name: "double economy",
       slug: "double-economy",
       type: "double",
-      price: 49,
+      price: 25,
       capacity: 2,
       pets: false,
-      breakfast: false,
+      breakfast: true,
       internet: true,
       description:
-        "A room with double bad in a mountain house 1.4km from the center with and bathroom shared kitchen. It provides all the conditions for an ideal vacation on our most beautiful mountain."
+        "A room with double bad in a mountain house 1km from the ski slopes with and bathroom shared kitchen. It provides all the conditions for an ideal vacation on our most beautiful mountain."
     },
     {
       id: 2,
       name: "double standard",
       slug: "double-standard",
       type: "double",
-      price: 62,
+      price: 40,
       capacity: 2,
       pets: true,
       breakfast: true,
       internet: true,
       description:
-        "A room with double bad in a hotel 300m from the center with kitchen and bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
+        "A room with double bad in a hotel 200m from the ski slopes with kitchen and bathroom. It provides all the conditions for an ideal vacation on our most beautiful mountain."
     },
     {
       id: 3,
       name: "double luxury",
       slug: "double-luxury",
       type: "double",
-      price: 85,
+      price: 55,
       capacity: 2,
       pets: true,
       breakfast: true,
@@ -87,7 +87,7 @@ const dataKopaonik = {
       name: "family economy",
       slug: "family-economy",
       type: "family",
-      price: 70,
+      price: 40,
       capacity: 4,
       pets: false,
       breakfast: false,
@@ -100,7 +100,7 @@ const dataKopaonik = {
       name: "family standard",
       slug: "family-standard",
       type: "family",
-      price: 99,
+      price: 55,
       capacity: 5,
       pets: true,
       breakfast: true,
@@ -113,7 +113,7 @@ const dataKopaonik = {
       name: "family luxury",
       slug: "family-luxury",
       type: "family",
-      price: 139,
+      price: 89,
       capacity: 6,
       pets: true,
       breakfast: true,

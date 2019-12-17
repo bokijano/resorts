@@ -39,7 +39,7 @@ export default class kopaonik extends Component {
               <Title mountain="kopaonik" price="29" />
               <div className="rooms-choose">
                 <ButtonContainer>
-                  <Link to="/rooms">see all rooms</Link>
+                  <Link to="/allKoponik">see all rooms</Link>
                 </ButtonContainer>
               </div>
             </div>

@@ -190,6 +190,36 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  .rooms-description {
+    width: 70vw;
+    margin: 10px auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    .room-bads {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      color: #333 !important;
+      //font-family: 'Bebas Neue', cursive;
+      font-family: "Cabin", sans-serif;
+      //font-family: 'Lobster', cursive;
+      text-transform: capitalize;
+      padding-top: 5px;
+    }
+    .room-descr {
+      font-family: "Lobster", cursive;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .room-descript {
+      font-family: "Cabin", sans-serif;
+      margin: 5px;
+      text-align: justify;
+    }
+    @media screen and (min-width: 776px) {
+      width: 25vw;
+    }
+  }
   .rooms-center {
     cursor: pointer;
     width: 70vw;
@@ -242,3 +272,4 @@
   }
 }
 
+/* room description */
