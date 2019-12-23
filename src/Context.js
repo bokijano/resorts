@@ -87,7 +87,7 @@ export default class ProductProvider extends Component {
     let icon2 = day2.icon;
     let tempMax2 = day2.temperatureMax;
     let tempMin2 = day2.temperatureMin;
-    let summary2 = day1.summary;
+    let summary2 = day2.summary;
     let secondDay = { time2, icon2, tempMax2, tempMin2, summary2 };
 
     let day3 = jsonData.daily.data[3];
@@ -95,7 +95,7 @@ export default class ProductProvider extends Component {
     let icon3 = day3.icon;
     let tempMax3 = day3.temperatureMax;
     let tempMin3 = day3.temperatureMin;
-    let summary3 = day1.summary;
+    let summary3 = day3.summary;
     let thirdDay = { time3, icon3, tempMax3, tempMin3, summary3 };
 
     let day4 = jsonData.daily.data[4];
@@ -103,7 +103,7 @@ export default class ProductProvider extends Component {
     let icon4 = day4.icon;
     let tempMax4 = day4.temperatureMax;
     let tempMin4 = day4.temperatureMin;
-    let summary4 = day1.summary;
+    let summary4 = day4.summary;
     let fourthDay = { time4, icon4, tempMax4, tempMin4, summary4 };
 
     let day5 = jsonData.daily.data[5];
@@ -111,7 +111,7 @@ export default class ProductProvider extends Component {
     let icon5 = day5.icon;
     let tempMax5 = day5.temperatureMax;
     let tempMin5 = day5.temperatureMin;
-    let summary5 = day1.summary;
+    let summary5 = day5.summary;
     let fifthDay = { time5, icon5, tempMax5, tempMin5, summary5 };
 
     this.setState({
@@ -143,7 +143,7 @@ export default class ProductProvider extends Component {
     });
   }
   async getTemperatureStara() {
-    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.3706, 22.6121`;
+    const api = `${this.state.proxy}https://api.darksky.net/forecast/${this.state.API_KEY}/43.3587, 22.6842`;
     const data = await fetch(api);
     const jsonData = await data.json();
     this.getValues(jsonData);

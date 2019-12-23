@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./temp.css";
 
-
 export default class longTermForecast extends Component {
   render() {
     const {
@@ -107,16 +106,16 @@ export default class longTermForecast extends Component {
         </div>
 
         <div className="firstDay">
-          <p>{convertUnix(time4)}</p>
+          <p>{convertUnix(time5)}</p>
           <div className="first">
-            <img className="temp-icon" src={getForecastIcon(icon4)} alt="" />
+            <img className="temp-icon" src={getForecastIcon(icon5)} alt="" />
             <div className="forecastFirst">
               <h5 className="maxTemp">
-                <span id="max">{toCelsius(tempMax4)} C</span>
+                <span id="max">{toCelsius(tempMax5)} C</span>
                 <span id="text">max</span>
               </h5>
               <h5 className="minTemp">
-                <span id="min">{toCelsius(tempMin4)} C</span>
+                <span id="min">{toCelsius(tempMin5)} C</span>
                 <span id="minText">min</span>
               </h5>
             </div>

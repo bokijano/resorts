@@ -15,7 +15,7 @@ export default class dfamilyStara extends Component {
   };
   render() {
     return (
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "120px" }}>
         <FamilyRoom
           rooms={this.state.data}
           roomsImg={this.state.roomsImg}

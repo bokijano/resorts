@@ -272,6 +272,12 @@
   font-size: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .room-title-center {
+    margin-top: 40px !important;
+  }
+}
+
 .featured-rooms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,6 +382,4 @@
   -webkit-transition: all 1.3s linear;
   transition: all 1.3s linear;
 }
-
-/* room description */
 /*# sourceMappingURL=App.css.map */

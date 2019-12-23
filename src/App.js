@@ -25,9 +25,6 @@ import FamilyStara from "./components/old mountain/familyStara.js";
 import AllRoomsStara from "./components/old mountain/allStara.js";
 
 import Error from "./pages/Error.js";
-import Rooms from "./pages/Rooms.js";
-
-
 
 import { Route, Switch } from "react-router-dom";
 
@@ -43,25 +40,48 @@ class App extends Component {
             ) : (
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/rooms" component={Rooms} />
-                {/*<Route exact path="/rooms/:single" component={SingleRoom} />*/}
+
                 <Route exact path="/kopaonik" component={Kopaonik} />
-                <Route exath path="/singleKopaonik" component={SingleKopaonik} />
-                <Route exath path="/doubleKopaonik" component={DoubleKopaonik} />
-                <Route exath path="/familyKopaonik" component={FamilyKopaonik} />
+                <Route
+                  exath
+                  path="/singleKopaonik"
+                  component={SingleKopaonik}
+                />
+                <Route
+                  exath
+                  path="/doubleKopaonik"
+                  component={DoubleKopaonik}
+                />
+                <Route
+                  exath
+                  path="/familyKopaonik"
+                  component={FamilyKopaonik}
+                />
                 <Route exact path="/allKoponik" component={AllRoomsKopaonik} />
-                
+
                 <Route exact path="/zlatibor" component={Zlatibor} />
-                <Route exath path="/singleZlatibor" component={SingleZlatibor} />
-                <Route exath path="/doubleZlatibor" component={DoubleZlatibor} />
-                <Route exath path="/familyZlatibor" component={FamilyZlatibor} />
+                <Route
+                  exath
+                  path="/singleZlatibor"
+                  component={SingleZlatibor}
+                />
+                <Route
+                  exath
+                  path="/doubleZlatibor"
+                  component={DoubleZlatibor}
+                />
+                <Route
+                  exath
+                  path="/familyZlatibor"
+                  component={FamilyZlatibor}
+                />
                 <Route exath path="/allZlatibor" component={AllRoomsZlatibor} />
 
                 <Route exact path="/staraPlanina" component={StaraPlanina} />
                 <Route exact path="/singleStara" component={SingleStara} />
                 <Route exath path="/doubleStara" component={DoubleStara} />
-                <Route exath path="/familyStara" component={FamilyStara} />                
-                <Route exath path="/allStara" component={AllRoomsStara} />  
+                <Route exath path="/familyStara" component={FamilyStara} />
+                <Route exath path="/allStara" component={AllRoomsStara} />
                 <Route component={Error} />
               </Switch>
             )}

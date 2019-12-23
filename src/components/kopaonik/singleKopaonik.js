@@ -18,7 +18,7 @@ export default class singleKopaonik extends Component {
   };
   render() {
     return (
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "120px" }}>
         <SingleRoom
           rooms={this.state.data}
           roomsImg={this.state.roomsImg}

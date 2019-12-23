@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-
 export default class singleRooms extends Component {
   render() {
     const rooms = this.props.rooms;
     const roomsImg = this.props.roomsImg;
     return (
       <React.Fragment>
-        <h2 className="room-title-center">{this.props.name}</h2>
+        <h2 className="room-title-center">
+          {this.props.name}
+        </h2>
         <div className="featured-rooms">
           {rooms.map(room => {
             return (

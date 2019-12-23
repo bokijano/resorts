@@ -11,11 +11,11 @@ export default class doubleStara extends Component {
     data: data.double,
     roomsImg: [Economy, Standard, Luxury],
     name: "Double Rooms",
-    link: "/zlatibor"
-  }
+    link: "/staraPlanina"
+  };
   render() {
     return (
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "120px" }}>
         <DoubleRoom
           rooms={this.state.data}
           roomsImg={this.state.roomsImg}
