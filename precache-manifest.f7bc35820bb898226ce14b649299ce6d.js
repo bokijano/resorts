@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "109d993d449eb411f614",
-    "url": "/resorts/static/css/main.553bccb2.chunk.css"
+    "revision": "20f0ed9cb65ec0cf23ba",
+    "url": "/resorts/static/css/main.92d9bb3e.chunk.css"
   },
   {
-    "revision": "109d993d449eb411f614",
-    "url": "/resorts/static/js/main.109d993d.chunk.js"
+    "revision": "20f0ed9cb65ec0cf23ba",
+    "url": "/resorts/static/js/main.20f0ed9c.chunk.js"
   },
   {
     "revision": "8f304fc1b3e5451962c0",
@@ -240,7 +240,7 @@ self.__precacheManifest = [
     "url": "/resorts/static/media/family-luxury.d6463ecf.jpg"
   },
   {
-    "revision": "b963f81c8f451263768e28f91ce22f3d",
+    "revision": "324933f5022333c40214642d1b8f9499",
     "url": "/resorts/index.html"
   }
 ];
